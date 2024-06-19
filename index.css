@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+h1,h2,h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Header */
+
+header {
+    background-color: #327D7D;
+    height: auto;
+}
+
+/* Navigation Bar */
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+#nav-bar div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#nav-bar ul li {
+    list-style: none;
+
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+}
+
+#nav-bar ul li a:hover {
+    color: #95caca;
+}
+
+#nav-bar #nav-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ffffff63;
+    border-radius: 30px;
+    padding: 0.8rem 1.6rem;
+    transition: 0.3s ease-in-out;
+}
+
+#nav-bar #nav-btn:hover {
+    background-color: #fff;
+    color: #327D7D;
+}
+
+#nav-bar .logo a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+#nav-bar p span {
+    font-weight: 275;
+}
+
+
+/* Media Query for Nav Bar */
+
+
+/* Banner Section */
+
+header .banner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 10rem 2rem;
+}
+
+.banner .text-part {
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.banner .text-part h1 {
+    font-weight: 600;
+    font-size: 75px;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner .text-part p {
+    font-size: 21px;
+    font-weight: 350; 
+}
+
+.banner .button-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner .button-links a {
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.banner .button-links #try{
+    background-color: #fff;
+    color: #327D7D;
+}
+
+.banner .button-links #try:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.banner .button-links #get {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.banner .button-links #get:hover {
+    background-color: #fff;
+    color: #327D7D;
+}
+
+
+.banner img {
+    width: 50%;
+    object-fit: contain;
+}
+
+
+/* main */
+
+/* instant team chats */
+main .instant-team-chats {
+    background-color: #fff;
+    height: auto;
+    padding: 4rem 7rem;
+
+}
+
+main .instant-team-chats h2 {
+    text-align: center;
+    color: #2B353E;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+main .instant-team-chats p {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #2B353E80;
+    margin-top: 2rem;
+}
+
+main .instant-team-chats img {
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+
+
+
+/* perfect Solutions */
+ main .perfect-solution-for-small-businesses {
+    background-color: #ebf2f2;
+    padding-block: 5rem;
+    display: flex;
+    align-items: start;
+    gap: 4rem;
+    justify-content: space-between;
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect {
+    width: 50%;
+    padding-right: 5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect h2 {
+    color: #2B353E;
+    font-size: 45px;
+    font-weight: 500;
+    width: 80%;
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect p {
+    font-size: 21px;
+    color: #2B353EB2;
+ }
+
+ main .perfect-solution-for-small-businesses img {
+    width: 50%;
+ }
+
+ 
+
+ main .perfect-solution-for-small-businesses .text-aspect .buttons a {
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 30px;
+    padding: 0.8rem 1.6rem;
+    transition: 0.3s ease-in-out;
+
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect .buttons .try{
+   color: #fff;
+   background-color: #327D7D;
+   border: 1px solid #327D7D;
+
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect .buttons .try:hover {
+    
+    background-color: #95caca;
+ }
+
+ main .perfect-solution-for-small-businesses .text-aspect .buttons .get{
+   color: #327D7D;
+   background-color: transparent;
+   border: 1px solid #fff;
+   margin-left: 1rem;
+
+ }
+
+ /* Horizontal lining */
+ main #horizontal-line{
+    background-color: #26465326;
+    width: 177px;
+    height: 1px;
+    margin-top: 1rem;
+ }
+
+
+ main .perfect-solution-for-small-businesses .text-aspect .buttons .get:hover {
+    
+    background-color: #95caca;
+ }
+
+  main .text-aspect .ratings {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+ }
+
+ main .text-aspect .ratings .stars {
+    color: #FBA229;
+ }
+
+main .text-aspect .ratings p {
+    font-weight: 700;
+    font-size: 18px;
+    width: 60%;
+}
+
+main .text-aspect .ratings p span {
+    font-weight: 400;
+}
+
+
+
+/* Footer */
+footer {    
+    padding: 3rem;
+}
+
+footer .footer-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+footer .column-one {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .column-one .logo {
+    font-family: "Poppins", sans-serif;
+    color: #327D7D;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+footer .column-one .logo span {
+    font-weight: 275;
+}
+
+footer .column-one .logo-description {
+    font-size: 15px;
+    color: #2B353EB2;
+    font-weight: 400;
+}
+
+footer .footer-container .footer-nav {
+    display: flex;
+    align-items: start;
+    gap: 7rem;
+}
+
+footer .footer-container .footer-nav .columns h3{
+    color: #2B353E;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer .footer-container .footer-nav .columns ul li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer .footer-container .footer-nav .columns ul li a{
+    text-decoration: none;
+    color: #2B353EB2;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+footer small {
+    font-size: 13px;
+    color: #2B353EB2;
+}
