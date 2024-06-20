@@ -21,12 +21,12 @@ header {
 /* Navigation Bar */
 #nav-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
+    justify-content: space-between;
 }
 
-#nav-bar div {
+#nav-bar .menu-and-btn {
     display: flex;
     gap: 1.5rem;
     align-items: center;
@@ -83,9 +83,27 @@ header {
     font-weight: 275;
 }
 
+#nav-bar .hamburger {
+    display: none;
+}
+
 
 /* Media Query for Nav Bar */
+@media (max-width: 945px) {
+    #nav-bar {
+        padding: 1rem;
+        justify-content: space-between;
+    }
 
+    
+    #nav-bar #nav-btn {
+        display: none;
+    }
+
+    
+   
+
+}
 
 /* Banner Section */
 
@@ -108,8 +126,9 @@ header .banner {
 
 .banner .text-part h1 {
     font-weight: 600;
-    font-size: 75px;
+    font-size: 7;
     font-family: "Poppins", sans-serif;
+    width: 70%;
 }
 
 .banner .text-part p {
@@ -160,6 +179,43 @@ header .banner {
 }
 
 
+/* MEDIA QUERY FOR BANNER SECTION */
+
+@media(max-width: 965px) {
+    header .banner {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .banner .text-part {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .banner .text-part h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .banner .text-part p {
+        font-size: 1.2rem;
+    }
+    
+    .banner .button-links {
+        flex-direction: column;
+    }
+    
+    .banner .button-links a {
+        font-size: 1rem;
+    }
+    .banner img {
+        width: 100%;
+    }
+
+}
+
 /* main */
 
 /* instant team chats */
@@ -193,6 +249,30 @@ main .instant-team-chats img {
 }
 
 
+
+/* MEDIA QUERY FOR INSTANT TEAM CHATS */
+
+@media (max-width:965px) {
+    main .instant-team-chats {
+        padding: 4rem 1rem;
+    
+    }
+    
+    main .instant-team-chats h2 {
+        font-size: 2rem;
+    }
+    
+    main .instant-team-chats p {
+        width: 100%;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    
+    main .instant-team-chats img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
 
 
 /* perfect Solutions */
@@ -264,6 +344,8 @@ main .instant-team-chats img {
 
  }
 
+
+
  /* Horizontal lining */
  main #horizontal-line{
     background-color: #26465326;
@@ -300,6 +382,69 @@ main .text-aspect .ratings p span {
 
 
 
+
+/* MEDIA QUERY FOR PERFECT SOLUTIONS  */
+@media(max-width:965px) {
+    main .perfect-solution-for-small-businesses {
+        padding:4rem 1.4rem;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 4rem;
+     }
+    
+     main .perfect-solution-for-small-businesses .text-aspect {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    
+     }
+    
+     main .perfect-solution-for-small-businesses .text-aspect h2 {
+        font-size: 2rem;
+        width: 100%;
+     }
+    
+     main .perfect-solution-for-small-businesses .text-aspect p {
+        font-size: 1.1rem;
+     }
+    
+     main .perfect-solution-for-small-businesses img {
+        width: 100%;
+     }
+    
+     main .perfect-solution-for-small-businesses .text-aspect .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+     }
+    
+     main .perfect-solution-for-small-businesses .text-aspect .buttons a {
+        font-size: 1rem;
+     }
+
+     main .perfect-solution-for-small-businesses .text-aspect .buttons .get {
+        margin: 0;
+     }
+
+    
+      main .text-aspect .ratings {
+        flex-direction: column;
+        gap: 1rem;
+     }
+
+    main .text-aspect .ratings p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+}
+
+
+
+
 /* Footer */
 footer {    
     padding: 3rem;
@@ -333,6 +478,7 @@ footer .column-one .logo-description {
     font-size: 15px;
     color: #2B353EB2;
     font-weight: 400;
+    width: 40%;
 }
 
 footer .footer-container .footer-nav {
@@ -362,4 +508,79 @@ footer .footer-container .footer-nav .columns ul li a{
 footer small {
     font-size: 13px;
     color: #2B353EB2;
+}
+
+
+
+/* MEDIA QUERY FOR THE FOOTER */
+
+@media(max-width: 965px) {
+    footer {    
+        padding: 3rem;
+    }
+    
+    footer .footer-container{
+        align-items: start;
+        justify-content: space-around;
+        height: auto;
+    }
+    
+    footer .column-one {
+        display: flex;
+        align-items: start;
+    }
+    
+    footer .column-one .logo {
+        font-family: "Poppins", sans-serif;
+        color: #327D7D;
+        font-weight: 500;
+        font-size: 26px;
+    }
+    
+    footer .column-one .logo span {
+        font-weight: 275;
+    }
+    
+    footer .column-one .logo-description {
+        font-size: 15px;
+        color: #2B353EB2;
+        font-weight: 400;
+        width: 40%;
+    }
+    
+    footer .footer-container .footer-nav {
+        flex-direction: column;
+        align-items: start;
+        gap: 7rem;
+    }
+    
+    footer .footer-container .footer-nav .columns h3{
+        color: #2B353E;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    footer .footer-container .footer-nav .columns ul li {
+        list-style: none;
+        margin-top: 1rem;
+    }
+    
+    footer .footer-container .footer-nav .columns ul li a{
+        text-decoration: none;
+        color: #2B353EB2;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    footer small {
+        font-size: 13px;
+        color: #2B353EB2;
+    }
+}
+
+@media(max-width: 435px) {
+    footer .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
