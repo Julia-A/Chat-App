@@ -96,12 +96,14 @@ header {
     }
 
     
-    #nav-bar #nav-btn {
-        display: none;
+    #nav-bar .hamburger {
+        display: block;
     }
 
     
-   
+    #nav-bar #nav-btn {
+        display: none;
+    }
 
 }
 
