@@ -126,7 +126,7 @@ header .banner {
 
 .banner .text-part h1 {
     font-weight: 600;
-    font-size: 7;
+    font-size: 5rem;
     font-family: "Poppins", sans-serif;
     width: 70%;
 }
@@ -508,6 +508,10 @@ footer .footer-container .footer-nav .columns ul li a{
 footer small {
     font-size: 13px;
     color: #2B353EB2;
+}
+
+footer small {
+    display: block;
 }
 
 
