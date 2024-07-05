@@ -6,7 +6,11 @@
 }
 
 
-h1,h2,h3 {
+#nav-bar p,
+#nav-bar span,
+h1,
+h2,
+h3 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -47,10 +51,17 @@ header {
 #nav-bar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 16.37px;
     transition: 0.3s ease-in-out;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    font-family: inherit;
 }
+
+
+
 
 #nav-bar ul li a:hover {
     color: #95caca;
@@ -59,12 +70,18 @@ header {
 #nav-bar #nav-btn {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 0.875rem;
+    font-weight: 400;
     background-color: #ffffff63;
     border-radius: 30px;
     padding: 0.8rem 1.6rem;
     transition: 0.3s ease-in-out;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-family: inherit;
 }
+
+
 
 #nav-bar #nav-btn:hover {
     background-color: #fff;
@@ -76,7 +93,7 @@ header {
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 1.625rem;
 }
 
 #nav-bar p span {
@@ -107,19 +124,23 @@ header {
 
 }
 
+
+/* main */
+
 /* Banner Section */
 
-header .banner {
+main .banner {
+    background-color: #327D7D;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
     align-items: center;
-    margin-top: 4rem;
-    padding: 0 10rem 2rem;
+    gap: 5rem;
+    padding: 4rem 0;
 }
 
 .banner .text-part {
-    width: 50%;
+    
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -127,30 +148,40 @@ header .banner {
 }
 
 .banner .text-part h1 {
+    width: 100%;
+    max-width: 371px;
     font-weight: 600;
-    font-size: 5rem;
+    font-size: 75px;
+    line-height: 97px;
+    letter-spacing: -0.03em;
     font-family: "Poppins", sans-serif;
-    width: 70%;
 }
 
 .banner .text-part p {
-    font-size: 21px;
-    font-weight: 350; 
+    font-size: 1.313rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.03em;
 }
 
 .banner .button-links {
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.03em;
 }
 
 .banner .button-links a {
     text-decoration: none;
-    font-size: 17px;
-    border-radius: 30px;
-    padding: 0.8rem 1.2rem;
+    font-size: 1.063rem;
+    border-radius: 35px;
+    padding: 0.6rem 1.8rem;
     transition: 0.3s ease-in-out;
 }
+
 
 .banner .button-links #try{
     background-color: #fff;
@@ -176,16 +207,15 @@ header .banner {
 
 
 .banner img {
-    width: 50%;
-    object-fit: contain;
+    width: 100%;
+    max-width: 588px;
 }
 
 
 /* MEDIA QUERY FOR BANNER SECTION */
 
 @media(max-width: 965px) {
-    header .banner {
-        flex-direction: column;
+    main .banner {
         padding: 1rem 2rem;
     }
 
@@ -199,6 +229,7 @@ header .banner {
     .banner .text-part h1 {
         font-size: 2rem;
         width: 100%;
+        text-align: center;
     }
     
     .banner .text-part p {
@@ -218,7 +249,8 @@ header .banner {
 
 }
 
-/* main */
+
+
 
 /* instant team chats */
 main .instant-team-chats {
@@ -232,21 +264,28 @@ main .instant-team-chats h2 {
     text-align: center;
     color: #2B353E;
     font-weight: 500;
-    font-size: 45px;
+    font-size: 2.813rem;
+    line-height: 58px;
 }
 
 main .instant-team-chats p {
-    width: 40%;
+    width: 100%;
+    max-width: 563px;
     margin: auto;
     text-align: center;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1.125rem;
     color: #2B353E80;
+    letter-spacing: -0.03em;
+    letter-spacing: -0.03em;
     margin-top: 2rem;
 }
 
+
 main .instant-team-chats img {
     display: block;
-    width: 75%;
+    width: 100%;
+    max-width: 1060px;
     margin: auto;
 }
 
@@ -265,14 +304,12 @@ main .instant-team-chats img {
     }
     
     main .instant-team-chats p {
-        width: 100%;
         font-size: 1.1rem;
         margin-top: 2rem;
     }
     
     main .instant-team-chats img {
         margin-top: 2rem;
-        width: 100%;
     }
 }
 
@@ -283,45 +320,63 @@ main .instant-team-chats img {
     padding-block: 5rem;
     display: flex;
     align-items: start;
-    gap: 4rem;
-    justify-content: space-between;
+    gap: 3rem;
+    /* justify-content: space-between; */
  }
 
  main .perfect-solution-for-small-businesses .text-aspect {
-    width: 50%;
-    padding-right: 5rem;
-    margin-left: 2rem;
+    width: 100%;
+    max-width: 447px;
+    /* padding-right: 2rem; */
+    /* margin-left: 2rem; */
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: start;
     gap: 2rem;
 
  }
 
  main .perfect-solution-for-small-businesses .text-aspect h2 {
+    max-width: 447px;
     color: #2B353E;
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 500;
-    width: 80%;
+    line-height: 58px;
  }
 
  main .perfect-solution-for-small-businesses .text-aspect p {
-    font-size: 21px;
-    color: #2B353EB2;
+    font-weight: 400;
+    font-size: 1.313rem;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    color: #2b353eb3;
+
+
  }
 
  main .perfect-solution-for-small-businesses img {
-    width: 50%;
+    width: 100%;
+    max-width: 775px;
  }
 
- 
+ main .perfect-solution-for-small-businesses .text-aspect .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+ }
 
  main .perfect-solution-for-small-businesses .text-aspect .buttons a {
     text-decoration: none;
-    font-size: 17px;
-    border-radius: 30px;
-    padding: 0.8rem 1.6rem;
+    font-size: 1.063rem;
+    font-weight: 700;
+    border-radius: 35px;
+    padding: 0.6rem 1.8rem;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    text-align: center;
     transition: 0.3s ease-in-out;
 
  }
@@ -341,7 +396,7 @@ main .instant-team-chats img {
  main .perfect-solution-for-small-businesses .text-aspect .buttons .get{
    color: #327D7D;
    background-color: transparent;
-   border: 1px solid #fff;
+   border: 1px solid #327D7D;
    margin-left: 1rem;
 
  }
@@ -374,16 +429,16 @@ main .instant-team-chats img {
 
 main .text-aspect .ratings p {
     font-weight: 700;
-    font-size: 18px;
-    width: 60%;
+    font-size: 1.125rem;
+    width: 100%;
+    max-width: 240px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
 }
 
 main .text-aspect .ratings p span {
     font-weight: 400;
 }
-
-
-
 
 /* MEDIA QUERY FOR PERFECT SOLUTIONS  */
 @media(max-width:965px) {
@@ -417,12 +472,7 @@ main .text-aspect .ratings p span {
         width: 100%;
      }
     
-     main .perfect-solution-for-small-businesses .text-aspect .buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-     }
+     
     
      main .perfect-solution-for-small-businesses .text-aspect .buttons a {
         font-size: 1rem;
@@ -444,6 +494,10 @@ main .text-aspect .ratings p span {
     }
 }
 
+@media(max-width: 1158px) {
+
+}
+
 
 
 
@@ -463,24 +517,31 @@ footer .column-one {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 1rem;
 }
 
 footer .column-one .logo {
     font-family: "Poppins", sans-serif;
     color: #327D7D;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
+    letter-spacing: 0.02em;
 }
+
 
 footer .column-one .logo span {
     font-weight: 275;
+    font-family: inherit;
 }
 
 footer .column-one .logo-description {
-    font-size: 15px;
-    color: #2B353EB2;
+    font-size: 0.938rem;
+    color: #2b353eb3;
     font-weight: 400;
-    width: 40%;
+    width: 100%;
+    max-width: 177px;
+    line-height: 24px;
 }
 
 footer .footer-container .footer-nav {
@@ -490,9 +551,11 @@ footer .footer-container .footer-nav {
 }
 
 footer .footer-container .footer-nav .columns h3{
+    font-family: ;
     color: #2B353E;
-    font-size: 18px;
+    font-size: 1.125;
     font-weight: 400;
+    line-height: 29px;
 }
 
 footer .footer-container .footer-nav .columns ul li {
@@ -561,6 +624,7 @@ footer small {
     }
     
     footer .footer-container .footer-nav .columns h3{
+        font-family: "Poppins", sans-serif;;
         color: #2B353E;
         font-size: 18px;
         font-weight: 400;
@@ -573,9 +637,10 @@ footer small {
     
     footer .footer-container .footer-nav .columns ul li a{
         text-decoration: none;
-        color: #2B353EB2;
-        font-size: 13px;
+        color: #2B353EB3;
+        font-size: 0.813rem;
         font-weight: 400;
+        line-height: 21px;
     }
     
     footer small {
